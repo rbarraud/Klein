@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5B1496B1CC24FA300639B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1496A1CC24FA300639B18 /* AppDelegate.swift */; };
+		B5B1496D1CC24FA300639B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1496C1CC24FA300639B18 /* ViewController.swift */; };
+		B5B149701CC24FA300639B18 /* Klein.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5B1496E1CC24FA300639B18 /* Klein.xcdatamodeld */; };
+		B5B149721CC24FA300639B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B149711CC24FA300639B18 /* Assets.xcassets */; };
+		B5B149751CC24FA300639B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B149731CC24FA300639B18 /* Main.storyboard */; };
+		B5B149801CC24FA400639B18 /* KleinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1497F1CC24FA400639B18 /* KleinTests.swift */; };
+		B5B1498B1CC24FA400639B18 /* KleinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1498A1CC24FA400639B18 /* KleinUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5B1497C1CC24FA400639B18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5B1495F1CC24FA300639B18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5B149661CC24FA300639B18;
+			remoteInfo = Klein;
+		};
+		B5B149871CC24FA400639B18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5B1495F1CC24FA300639B18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5B149661CC24FA300639B18;
+			remoteInfo = Klein;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5B149671CC24FA300639B18 /* Klein.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klein.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B1496A1CC24FA300639B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5B1496C1CC24FA300639B18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5B1496F1CC24FA300639B18 /* Klein.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Klein.xcdatamodel; sourceTree = "<group>"; };
+		B5B149711CC24FA300639B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5B149741CC24FA300639B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5B149761CC24FA300639B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B1497B1CC24FA400639B18 /* KleinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KleinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B1497F1CC24FA400639B18 /* KleinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleinTests.swift; sourceTree = "<group>"; };
+		B5B149811CC24FA400639B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B149861CC24FA400639B18 /* KleinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KleinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B1498A1CC24FA400639B18 /* KleinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleinUITests.swift; sourceTree = "<group>"; };
+		B5B1498C1CC24FA400639B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5B149641CC24FA300639B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B149781CC24FA400639B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B149831CC24FA400639B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5B1495E1CC24FA300639B18 = {
+			isa = PBXGroup;
+			children = (
+				B5B149691CC24FA300639B18 /* Klein */,
+				B5B1497E1CC24FA400639B18 /* KleinTests */,
+				B5B149891CC24FA400639B18 /* KleinUITests */,
+				B5B149681CC24FA300639B18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5B149681CC24FA300639B18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5B149671CC24FA300639B18 /* Klein.app */,
+				B5B1497B1CC24FA400639B18 /* KleinTests.xctest */,
+				B5B149861CC24FA400639B18 /* KleinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5B149691CC24FA300639B18 /* Klein */ = {
+			isa = PBXGroup;
+			children = (
+				B5B1496A1CC24FA300639B18 /* AppDelegate.swift */,
+				B5B1496C1CC24FA300639B18 /* ViewController.swift */,
+				B5B149711CC24FA300639B18 /* Assets.xcassets */,
+				B5B149731CC24FA300639B18 /* Main.storyboard */,
+				B5B149761CC24FA300639B18 /* Info.plist */,
+				B5B1496E1CC24FA300639B18 /* Klein.xcdatamodeld */,
+			);
+			path = Klein;
+			sourceTree = "<group>";
+		};
+		B5B1497E1CC24FA400639B18 /* KleinTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5B1497F1CC24FA400639B18 /* KleinTests.swift */,
+				B5B149811CC24FA400639B18 /* Info.plist */,
+			);
+			path = KleinTests;
+			sourceTree = "<group>";
+		};
+		B5B149891CC24FA400639B18 /* KleinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5B1498A1CC24FA400639B18 /* KleinUITests.swift */,
+				B5B1498C1CC24FA400639B18 /* Info.plist */,
+			);
+			path = KleinUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5B149661CC24FA300639B18 /* Klein */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5B1498F1CC24FA400639B18 /* Build configuration list for PBXNativeTarget "Klein" */;
+			buildPhases = (
+				B5B149631CC24FA300639B18 /* Sources */,
+				B5B149641CC24FA300639B18 /* Frameworks */,
+				B5B149651CC24FA300639B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Klein;
+			productName = Klein;
+			productReference = B5B149671CC24FA300639B18 /* Klein.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5B1497A1CC24FA400639B18 /* KleinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5B149921CC24FA400639B18 /* Build configuration list for PBXNativeTarget "KleinTests" */;
+			buildPhases = (
+				B5B149771CC24FA400639B18 /* Sources */,
+				B5B149781CC24FA400639B18 /* Frameworks */,
+				B5B149791CC24FA400639B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5B1497D1CC24FA400639B18 /* PBXTargetDependency */,
+			);
+			name = KleinTests;
+			productName = KleinTests;
+			productReference = B5B1497B1CC24FA400639B18 /* KleinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5B149851CC24FA400639B18 /* KleinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5B149951CC24FA400639B18 /* Build configuration list for PBXNativeTarget "KleinUITests" */;
+			buildPhases = (
+				B5B149821CC24FA400639B18 /* Sources */,
+				B5B149831CC24FA400639B18 /* Frameworks */,
+				B5B149841CC24FA400639B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5B149881CC24FA400639B18 /* PBXTargetDependency */,
+			);
+			name = KleinUITests;
+			productName = KleinUITests;
+			productReference = B5B149861CC24FA400639B18 /* KleinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5B1495F1CC24FA300639B18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Roger Barraud";
+				TargetAttributes = {
+					B5B149661CC24FA300639B18 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					B5B1497A1CC24FA400639B18 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B5B149661CC24FA300639B18;
+					};
+					B5B149851CC24FA400639B18 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B5B149661CC24FA300639B18;
+					};
+				};
+			};
+			buildConfigurationList = B5B149621CC24FA300639B18 /* Build configuration list for PBXProject "Klein" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5B1495E1CC24FA300639B18;
+			productRefGroup = B5B149681CC24FA300639B18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5B149661CC24FA300639B18 /* Klein */,
+				B5B1497A1CC24FA400639B18 /* KleinTests */,
+				B5B149851CC24FA400639B18 /* KleinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5B149651CC24FA300639B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B149721CC24FA300639B18 /* Assets.xcassets in Resources */,
+				B5B149751CC24FA300639B18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B149791CC24FA400639B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B149841CC24FA400639B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5B149631CC24FA300639B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B149701CC24FA300639B18 /* Klein.xcdatamodeld in Sources */,
+				B5B1496D1CC24FA300639B18 /* ViewController.swift in Sources */,
+				B5B1496B1CC24FA300639B18 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B149771CC24FA400639B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B149801CC24FA400639B18 /* KleinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B149821CC24FA400639B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B1498B1CC24FA400639B18 /* KleinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5B1497D1CC24FA400639B18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5B149661CC24FA300639B18 /* Klein */;
+			targetProxy = B5B1497C1CC24FA400639B18 /* PBXContainerItemProxy */;
+		};
+		B5B149881CC24FA400639B18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5B149661CC24FA300639B18 /* Klein */;
+			targetProxy = B5B149871CC24FA400639B18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5B149731CC24FA300639B18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5B149741CC24FA300639B18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5B1498D1CC24FA400639B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5B1498E1CC24FA400639B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B5B149901CC24FA400639B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Klein/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.robarsystems.Klein;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B5B149911CC24FA400639B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Klein/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.robarsystems.Klein;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B5B149931CC24FA400639B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KleinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.robarsystems.KleinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klein.app/Contents/MacOS/Klein";
+			};
+			name = Debug;
+		};
+		B5B149941CC24FA400639B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KleinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.robarsystems.KleinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klein.app/Contents/MacOS/Klein";
+			};
+			name = Release;
+		};
+		B5B149961CC24FA400639B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KleinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.robarsystems.KleinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Klein;
+			};
+			name = Debug;
+		};
+		B5B149971CC24FA400639B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KleinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.robarsystems.KleinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Klein;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5B149621CC24FA300639B18 /* Build configuration list for PBXProject "Klein" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B1498D1CC24FA400639B18 /* Debug */,
+				B5B1498E1CC24FA400639B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5B1498F1CC24FA400639B18 /* Build configuration list for PBXNativeTarget "Klein" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B149901CC24FA400639B18 /* Debug */,
+				B5B149911CC24FA400639B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B5B149921CC24FA400639B18 /* Build configuration list for PBXNativeTarget "KleinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B149931CC24FA400639B18 /* Debug */,
+				B5B149941CC24FA400639B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B5B149951CC24FA400639B18 /* Build configuration list for PBXNativeTarget "KleinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B149961CC24FA400639B18 /* Debug */,
+				B5B149971CC24FA400639B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B5B1496E1CC24FA300639B18 /* Klein.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B5B1496F1CC24FA300639B18 /* Klein.xcdatamodel */,
+			);
+			currentVersion = B5B1496F1CC24FA300639B18 /* Klein.xcdatamodel */;
+			path = Klein.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B5B1495F1CC24FA300639B18 /* Project object */;
+}
