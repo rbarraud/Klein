@@ -14,6 +14,7 @@
 		B5B149751CC24FA300639B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B149731CC24FA300639B18 /* Main.storyboard */; };
 		B5B149801CC24FA400639B18 /* KleinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1497F1CC24FA400639B18 /* KleinTests.swift */; };
 		B5B1498B1CC24FA400639B18 /* KleinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1498A1CC24FA400639B18 /* KleinUITests.swift */; };
+		B5EEB4E81CC4A7AC006FA4F6 /* Docs in Resources */ = {isa = PBXBuildFile; fileRef = B5EEB4E71CC4A7AC006FA4F6 /* Docs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B5B149861CC24FA400639B18 /* KleinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KleinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B1498A1CC24FA400639B18 /* KleinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleinUITests.swift; sourceTree = "<group>"; };
 		B5B1498C1CC24FA400639B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5EEB4E71CC4A7AC006FA4F6 /* Docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Docs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		B5B1495E1CC24FA300639B18 = {
 			isa = PBXGroup;
 			children = (
+				B5EEB4E71CC4A7AC006FA4F6 /* Docs */,
 				B5B149691CC24FA300639B18 /* Klein */,
 				B5B1497E1CC24FA400639B18 /* KleinTests */,
 				B5B149891CC24FA400639B18 /* KleinUITests */,
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5B149721CC24FA300639B18 /* Assets.xcassets in Resources */,
+				B5EEB4E81CC4A7AC006FA4F6 /* Docs in Resources */,
 				B5B149751CC24FA300639B18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -381,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -484,6 +488,7 @@
 				B5B149911CC24FA400639B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5B149921CC24FA400639B18 /* Build configuration list for PBXNativeTarget "KleinTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				B5B149941CC24FA400639B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5B149951CC24FA400639B18 /* Build configuration list for PBXNativeTarget "KleinUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				B5B149971CC24FA400639B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
