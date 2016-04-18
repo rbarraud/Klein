@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B544AF891CC4C07A003347A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544AF881CC4C07A003347A6 /* AppDelegate.swift */; };
+		B544AF8B1CC4C07A003347A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544AF8A1CC4C07A003347A6 /* ViewController.swift */; };
+		B544AF8E1CC4C07A003347A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B544AF8C1CC4C07A003347A6 /* Main.storyboard */; };
+		B544AF911CC4C07A003347A6 /* KleinPad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B544AF8F1CC4C07A003347A6 /* KleinPad.xcdatamodeld */; };
+		B544AF931CC4C07A003347A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B544AF921CC4C07A003347A6 /* Assets.xcassets */; };
+		B544AF961CC4C07A003347A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B544AF941CC4C07A003347A6 /* LaunchScreen.storyboard */; };
+		B544AFA11CC4C07B003347A6 /* KleinPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544AFA01CC4C07B003347A6 /* KleinPadTests.swift */; };
+		B544AFAC1CC4C07B003347A6 /* KleinPadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544AFAB1CC4C07B003347A6 /* KleinPadUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B544AF9D1CC4C07B003347A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B544AF7D1CC4C07A003347A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B544AF841CC4C07A003347A6;
+			remoteInfo = KleinPad;
+		};
+		B544AFA81CC4C07B003347A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B544AF7D1CC4C07A003347A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B544AF841CC4C07A003347A6;
+			remoteInfo = KleinPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B544AF851CC4C07A003347A6 /* KleinPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KleinPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B544AF881CC4C07A003347A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B544AF8A1CC4C07A003347A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B544AF8D1CC4C07A003347A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B544AF901CC4C07A003347A6 /* KleinPad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KleinPad.xcdatamodel; sourceTree = "<group>"; };
+		B544AF921CC4C07A003347A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B544AF951CC4C07A003347A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B544AF971CC4C07A003347A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B544AF9C1CC4C07B003347A6 /* KleinPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KleinPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B544AFA01CC4C07B003347A6 /* KleinPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleinPadTests.swift; sourceTree = "<group>"; };
+		B544AFA21CC4C07B003347A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B544AFA71CC4C07B003347A6 /* KleinPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KleinPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B544AFAB1CC4C07B003347A6 /* KleinPadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleinPadUITests.swift; sourceTree = "<group>"; };
+		B544AFAD1CC4C07B003347A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B544AF821CC4C07A003347A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B544AF991CC4C07B003347A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B544AFA41CC4C07B003347A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B544AF7C1CC4C07A003347A6 = {
+			isa = PBXGroup;
+			children = (
+				B544AF871CC4C07A003347A6 /* KleinPad */,
+				B544AF9F1CC4C07B003347A6 /* KleinPadTests */,
+				B544AFAA1CC4C07B003347A6 /* KleinPadUITests */,
+				B544AF861CC4C07A003347A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B544AF861CC4C07A003347A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B544AF851CC4C07A003347A6 /* KleinPad.app */,
+				B544AF9C1CC4C07B003347A6 /* KleinPadTests.xctest */,
+				B544AFA71CC4C07B003347A6 /* KleinPadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B544AF871CC4C07A003347A6 /* KleinPad */ = {
+			isa = PBXGroup;
+			children = (
+				B544AF881CC4C07A003347A6 /* AppDelegate.swift */,
+				B544AF8A1CC4C07A003347A6 /* ViewController.swift */,
+				B544AF8C1CC4C07A003347A6 /* Main.storyboard */,
+				B544AF921CC4C07A003347A6 /* Assets.xcassets */,
+				B544AF941CC4C07A003347A6 /* LaunchScreen.storyboard */,
+				B544AF971CC4C07A003347A6 /* Info.plist */,
+				B544AF8F1CC4C07A003347A6 /* KleinPad.xcdatamodeld */,
+			);
+			path = KleinPad;
+			sourceTree = "<group>";
+		};
+		B544AF9F1CC4C07B003347A6 /* KleinPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				B544AFA01CC4C07B003347A6 /* KleinPadTests.swift */,
+				B544AFA21CC4C07B003347A6 /* Info.plist */,
+			);
+			path = KleinPadTests;
+			sourceTree = "<group>";
+		};
+		B544AFAA1CC4C07B003347A6 /* KleinPadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B544AFAB1CC4C07B003347A6 /* KleinPadUITests.swift */,
+				B544AFAD1CC4C07B003347A6 /* Info.plist */,
+			);
+			path = KleinPadUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B544AF841CC4C07A003347A6 /* KleinPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B544AFB01CC4C07B003347A6 /* Build configuration list for PBXNativeTarget "KleinPad" */;
+			buildPhases = (
+				B544AF811CC4C07A003347A6 /* Sources */,
+				B544AF821CC4C07A003347A6 /* Frameworks */,
+				B544AF831CC4C07A003347A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KleinPad;
+			productName = KleinPad;
+			productReference = B544AF851CC4C07A003347A6 /* KleinPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B544AF9B1CC4C07B003347A6 /* KleinPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B544AFB31CC4C07B003347A6 /* Build configuration list for PBXNativeTarget "KleinPadTests" */;
+			buildPhases = (
+				B544AF981CC4C07B003347A6 /* Sources */,
+				B544AF991CC4C07B003347A6 /* Frameworks */,
+				B544AF9A1CC4C07B003347A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B544AF9E1CC4C07B003347A6 /* PBXTargetDependency */,
+			);
+			name = KleinPadTests;
+			productName = KleinPadTests;
+			productReference = B544AF9C1CC4C07B003347A6 /* KleinPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B544AFA61CC4C07B003347A6 /* KleinPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B544AFB61CC4C07B003347A6 /* Build configuration list for PBXNativeTarget "KleinPadUITests" */;
+			buildPhases = (
+				B544AFA31CC4C07B003347A6 /* Sources */,
+				B544AFA41CC4C07B003347A6 /* Frameworks */,
+				B544AFA51CC4C07B003347A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B544AFA91CC4C07B003347A6 /* PBXTargetDependency */,
+			);
+			name = KleinPadUITests;
+			productName = KleinPadUITests;
+			productReference = B544AFA71CC4C07B003347A6 /* KleinPadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B544AF7D1CC4C07A003347A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Roger Barraud";
+				TargetAttributes = {
+					B544AF841CC4C07A003347A6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					B544AF9B1CC4C07B003347A6 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B544AF841CC4C07A003347A6;
+					};
+					B544AFA61CC4C07B003347A6 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B544AF841CC4C07A003347A6;
+					};
+				};
+			};
+			buildConfigurationList = B544AF801CC4C07A003347A6 /* Build configuration list for PBXProject "KleinPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B544AF7C1CC4C07A003347A6;
+			productRefGroup = B544AF861CC4C07A003347A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B544AF841CC4C07A003347A6 /* KleinPad */,
+				B544AF9B1CC4C07B003347A6 /* KleinPadTests */,
+				B544AFA61CC4C07B003347A6 /* KleinPadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B544AF831CC4C07A003347A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B544AF961CC4C07A003347A6 /* LaunchScreen.storyboard in Resources */,
+				B544AF931CC4C07A003347A6 /* Assets.xcassets in Resources */,
+				B544AF8E1CC4C07A003347A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B544AF9A1CC4C07B003347A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B544AFA51CC4C07B003347A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B544AF811CC4C07A003347A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B544AF8B1CC4C07A003347A6 /* ViewController.swift in Sources */,
+				B544AF911CC4C07A003347A6 /* KleinPad.xcdatamodeld in Sources */,
+				B544AF891CC4C07A003347A6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B544AF981CC4C07B003347A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B544AFA11CC4C07B003347A6 /* KleinPadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B544AFA31CC4C07B003347A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B544AFAC1CC4C07B003347A6 /* KleinPadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B544AF9E1CC4C07B003347A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B544AF841CC4C07A003347A6 /* KleinPad */;
+			targetProxy = B544AF9D1CC4C07B003347A6 /* PBXContainerItemProxy */;
+		};
+		B544AFA91CC4C07B003347A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B544AF841CC4C07A003347A6 /* KleinPad */;
+			targetProxy = B544AFA81CC4C07B003347A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B544AF8C1CC4C07A003347A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B544AF8D1CC4C07A003347A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B544AF941CC4C07A003347A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B544AF951CC4C07A003347A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B544AFAE1CC4C07B003347A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B544AFAF1CC4C07B003347A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B544AFB11CC4C07B003347A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KleinPad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.robarsystems.KleinPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B544AFB21CC4C07B003347A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KleinPad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.robarsystems.KleinPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B544AFB41CC4C07B003347A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KleinPadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.robarsystems.KleinPadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KleinPad.app/KleinPad";
+			};
+			name = Debug;
+		};
+		B544AFB51CC4C07B003347A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KleinPadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.robarsystems.KleinPadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KleinPad.app/KleinPad";
+			};
+			name = Release;
+		};
+		B544AFB71CC4C07B003347A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KleinPadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.robarsystems.KleinPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KleinPad;
+			};
+			name = Debug;
+		};
+		B544AFB81CC4C07B003347A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KleinPadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.robarsystems.KleinPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KleinPad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B544AF801CC4C07A003347A6 /* Build configuration list for PBXProject "KleinPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B544AFAE1CC4C07B003347A6 /* Debug */,
+				B544AFAF1CC4C07B003347A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B544AFB01CC4C07B003347A6 /* Build configuration list for PBXNativeTarget "KleinPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B544AFB11CC4C07B003347A6 /* Debug */,
+				B544AFB21CC4C07B003347A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B544AFB31CC4C07B003347A6 /* Build configuration list for PBXNativeTarget "KleinPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B544AFB41CC4C07B003347A6 /* Debug */,
+				B544AFB51CC4C07B003347A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B544AFB61CC4C07B003347A6 /* Build configuration list for PBXNativeTarget "KleinPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B544AFB71CC4C07B003347A6 /* Debug */,
+				B544AFB81CC4C07B003347A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B544AF8F1CC4C07A003347A6 /* KleinPad.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B544AF901CC4C07A003347A6 /* KleinPad.xcdatamodel */,
+			);
+			currentVersion = B544AF901CC4C07A003347A6 /* KleinPad.xcdatamodel */;
+			path = KleinPad.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B544AF7D1CC4C07A003347A6 /* Project object */;
+}
