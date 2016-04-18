@@ -1,0 +1,61 @@
+﻿Looper App Description
+
+
+The app would start with a title page which gave you two options of modes to go into:
+* Create and Edit Mode
+* Live Mode
+
+
+
+
+Create and Edit Mode
+In create and edit mode you can create a new song, edit an existing song or make a new version of an existing song (this is how you could make for example a dance mix of Let’s Not Talk).
+
+
+Once your song or blank project opens you can edit all parameters.
+* Choose how many tracks you will have in this song and name each track
+* Choose what the sliders above the tracks will control (default setting = volume)
+* Edit the top boxes (intro, V1a, V1b etc) - press and hold down on these to edit each. A new window should open where you can change how many boxes there are, what each is named, and the settings on each track in each part of the song - which ones are playing at this time, the volume on each etc. Also would be cool if you could decide if you want to start recording a loop onto one of the tracks at this point in the song - then this track would start recording the next time the loop on track 1 starts. You could also tell it how many cycles of loop 1 to record for and if you want the track muted after the loop has recorded or to start playing so it can be heard.
+* Record some loops that will be pre-recorded and load when you open the song in Live mode. You can lock the tracks that have loops prerecorded on them too, in edit mode, which will mean that when you are in live mode you cannot record onto these tracks, even to overdub. You should also be able to choose a setting so that in live mode, once a track has a loop recorded onto it, the track locks or can only be overdubbed (so you can’t accidentally record over a track while performing).
+* Maybe it would also be good to be able to choose a bpm and key signature (eg. 4/4 or ¾ etc) in edit mode. Then in edit mode you can have a little light flashing on each beat and an audible click playing while you record the loops in edit mode. In live mode the click will not play any sound but the light still flashes on each beat?
+
+
+Live Mode
+In live mode you can choose to create a new set list or open an existing set list.
+In the set list you can choose what songs you want to play at a show and drag them up and down to change the order of the songs.
+Once you are happy with a set list and ready to play live there is a button down the bottom called “Show Time!” or something.
+This will take you into your first song in the set list. The song title will display at the top and all prerecorded loops will be loaded at the bottom. When the song first opens they will all be paused at the top of the loop. Then you can either choose to unmute a loop by pressing with your finger on the track you want to unmute or press the big right pointing triangle to go to the “intro” (or whatever you have called this box) settings. As soon as one loop starts playing, all the prerecorded loops would start playing simultaneously and the circles would start filling in as the loops play, whether they are muted or unmuted. The circles should be one colour if they are muted and another colour if they are unmuted.
+
+
+At the top of the page the “intro”, V1a…. boxes: These will all be the same colour except for the one that is currently selected. You can go to a part of the song by tapping on it with your finger or you can go to the next part of the song by tapping the big right pointing triangle.
+Once you are at the “outro” or the last little box, you can press and hold on the big right pointing triangle to take you to the next song in your set list.
+
+
+“Record enable”. When this button has been tapped and turned on it will be a red colour. When it is off it will be a more neutral colour. When the record enable button is on you can tap on a track to record a loop onto it. 
+Track 1: When recording onto track one, the recording will begin and end exactly when you tap the first and second times on Track 1. Your first tap (start recording) and your second tap (stop recording) will determine the length of the loop. The length of all subsequent loops on tracks 2-8 (or how ever many tracks you have chosen to have) will be multiples of the length of the track 1 loop.
+Recording on tracks 2 - 8: When you tap on the relevant track the recording will begin the next time the track 1 loop gets to the top. When you tap on the relevant track again (to stop recording), the recording will stop the next time the track 1 loop gets to the top.
+
+
+When the Record Enable button is off, when you tap on a track down the bottom, it will either mute or unmute, depending on what state it was in before you tapped it.
+
+
+The pause button: tapping this will pause all the loops playing. I guess when they are paused it should turn into a play button or something. There should probably be a way of doing three things -
+1. To pause all the loops so they stay at the same place until you press play again
+2. To mute all the loops, but they continue playing and the circles filling etc.
+3. To pause all the loops, but when you press play again they start from the top of the longest loop??
+ not sure how to arrange this best……
+
+
+There should also be an undo button somewhere. And maybe redo?
+
+
+The sliders above the tracks you can slide up and down at anytime to change the volume of that track (or whatever parameter you have chosen in edit mode that the slider will control).
+
+
+Big right pointing triangle: tapping once will take you to the next part of the song according to the little boxes above the triangle (eg. from PC to Ch). I think that it should happen as soon as you tap the button and not wait until the top of loop 1 to change as some lyric phrases will start before the top of the loop for example.
+
+
+At the moment I don’t think the big LEFT pointing triangle is necessary. Maybe this could be removed to make room for some other buttons.
+
+
+Input level shows level of audio coming in from microphone/instrument/audio interface. I don’t know if it is practical to have this going all through the song - not sure how much processing power it will take to continuously show this. If it will make other things lag then we would need to either discard this or show it another way.
