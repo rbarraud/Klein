@@ -31,6 +31,8 @@
 		B58455201CD1CC50008FA17F /* KleinPadRecordingToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584551F1CD1CC50008FA17F /* KleinPadRecordingToggleView.swift */; };
 		B58455221CD1CD27008FA17F /* KleinPadSongStructurePartsControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58455211CD1CD27008FA17F /* KleinPadSongStructurePartsControlView.swift */; };
 		B58455241CD1D054008FA17F /* KleinPadSongStructurePartsJumpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58455231CD1D054008FA17F /* KleinPadSongStructurePartsJumpButton.swift */; };
+		B58455261CD1D67C008FA17F /* KleinPadLooperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58455251CD1D67C008FA17F /* KleinPadLooperButton.swift */; };
+		B58455281CD1D7AA008FA17F /* KleinPadConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58455271CD1D7AA008FA17F /* KleinPadConfigViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		B584551F1CD1CC50008FA17F /* KleinPadRecordingToggleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KleinPadRecordingToggleView.swift; sourceTree = "<group>"; };
 		B58455211CD1CD27008FA17F /* KleinPadSongStructurePartsControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KleinPadSongStructurePartsControlView.swift; sourceTree = "<group>"; };
 		B58455231CD1D054008FA17F /* KleinPadSongStructurePartsJumpButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KleinPadSongStructurePartsJumpButton.swift; sourceTree = "<group>"; };
+		B58455251CD1D67C008FA17F /* KleinPadLooperButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KleinPadLooperButton.swift; sourceTree = "<group>"; };
+		B58455271CD1D7AA008FA17F /* KleinPadConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KleinPadConfigViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 				B544AF881CC4C07A003347A6 /* AppDelegate.swift */,
 				B544AF8A1CC4C07A003347A6 /* ViewController.swift */,
 				B544AF8C1CC4C07A003347A6 /* Main.storyboard */,
+				B58455251CD1D67C008FA17F /* KleinPadLooperButton.swift */,
 				B584551F1CD1CC50008FA17F /* KleinPadRecordingToggleView.swift */,
 				B584551D1CD1C692008FA17F /* KleinPadRecordToggle.swift */,
 				B58455131CD1B3CE008FA17F /* KleinPadSongStructurePartView.swift */,
@@ -152,6 +157,7 @@
 				B58455171CD1B484008FA17F /* KleinPadLoopsMixerView.swift */,
 				B584551B1CD1C02B008FA17F /* KleinPadLoopsMixerViewController.swift */,
 				B58455191CD1B507008FA17F /* KleinPadLoopGainSlider.swift */,
+				B58455271CD1D7AA008FA17F /* KleinPadConfigViewController.swift */,
 				B584550B1CD1AFC7008FA17F /* KleinPadPerformView.swift */,
 				B544AF921CC4C07A003347A6 /* Assets.xcassets */,
 				B544AF941CC4C07A003347A6 /* LaunchScreen.storyboard */,
@@ -326,7 +332,9 @@
 				B584551E1CD1C692008FA17F /* KleinPadRecordToggle.swift in Sources */,
 				B544AF891CC4C07A003347A6 /* AppDelegate.swift in Sources */,
 				B58455041CD1940A008FA17F /* KleinPadSplashViewController.swift in Sources */,
+				B58455261CD1D67C008FA17F /* KleinPadLooperButton.swift in Sources */,
 				B58455061CD19EB7008FA17F /* KleinPadTopViewController.swift in Sources */,
+				B58455281CD1D7AA008FA17F /* KleinPadConfigViewController.swift in Sources */,
 				B584550E1CD1B040008FA17F /* KleinPadInputLevelMeter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

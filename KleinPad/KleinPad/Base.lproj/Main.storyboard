@@ -149,7 +149,7 @@
                                 <rect key="frame" x="10" y="294" width="519" height="190"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="89i-0E-Vwn" userLabel="Gain Slider 1" customClass="KleinPadLoopGainSlider">
-                                        <rect key="frame" x="25" y="20" width="92" height="31"/>
+                                        <rect key="frame" x="25" y="23" width="92" height="31"/>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="CjZ-rO-pRj" userLabel="Gain Slider 2" customClass="KleinPadLoopGainSlider">
                                         <rect key="frame" x="147" y="19" width="92" height="31"/>
@@ -187,35 +187,35 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zZw-bv-0ga" userLabel="LoopersView">
                                 <rect key="frame" x="20" y="501" width="509" height="99"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cb-Yp-B0K" userLabel="1">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cb-Yp-B0K" userLabel="1" customClass="KleinPadLooperButton" customModule="KleinPad" customModuleProvider="target">
                                         <rect key="frame" x="50" y="35" width="30" height="30"/>
                                         <state key="normal" title="1"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s79-pM-pXu" userLabel="2">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s79-pM-pXu" userLabel="2" customClass="KleinPadLooperButton" customModule="KleinPad" customModuleProvider="target">
                                         <rect key="frame" x="104" y="35" width="30" height="30"/>
                                         <state key="normal" title="2"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcJ-VS-9iE" userLabel="3">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcJ-VS-9iE" userLabel="3" customClass="KleinPadLooperButton" customModule="KleinPad" customModuleProvider="target">
                                         <rect key="frame" x="158" y="35" width="30" height="30"/>
                                         <state key="normal" title="3"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1if-qt-qrO">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1if-qt-qrO" customClass="KleinPadLooperButton" customModule="KleinPad" customModuleProvider="target">
                                         <rect key="frame" x="212" y="35" width="30" height="30"/>
                                         <state key="normal" title="4"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nt3-h0-mo7">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nt3-h0-mo7" customClass="KleinPadLooperButton" customModule="KleinPad" customModuleProvider="target">
                                         <rect key="frame" x="266" y="35" width="30" height="30"/>
                                         <state key="normal" title="5"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03N-A2-VXg">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03N-A2-VXg" customClass="KleinPadLooperButton" customModule="KleinPad" customModuleProvider="target">
                                         <rect key="frame" x="320" y="35" width="30" height="30"/>
                                         <state key="normal" title="6"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZb-Li-oaC">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZb-Li-oaC" customClass="KleinPadLooperButton" customModule="KleinPad" customModuleProvider="target">
                                         <rect key="frame" x="374" y="35" width="30" height="30"/>
                                         <state key="normal" title="7"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY9-ep-Zq2">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY9-ep-Zq2" customClass="KleinPadLooperButton" customModule="KleinPad" customModuleProvider="target">
                                         <rect key="frame" x="428" y="35" width="30" height="30"/>
                                         <state key="normal" title="8"/>
                                     </button>
@@ -248,10 +248,10 @@
             </objects>
             <point key="canvasLocation" x="3340" y="-1547"/>
         </scene>
-        <!--KleinPad-->
+        <!--KleinPad Top Level Navigation Controller-->
         <scene sceneID="2EP-6q-5K9">
             <objects>
-                <navigationController storyboardIdentifier="TopNav" title="KleinPad" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I8m-HV-q2q" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="TopNav" title="KleinPad" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I8m-HV-q2q" userLabel="KleinPad Top Level Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CeC-di-G5q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
