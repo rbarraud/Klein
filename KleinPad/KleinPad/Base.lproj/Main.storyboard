@@ -1,25 +1,270 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I8m-HV-q2q">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Klein Pad Top View Controller-->
+        <scene sceneID="2vB-eg-28y">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TopViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tuA-oP-g6n" customClass="KleinPadTopViewController" customModule="KleinPad" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="TB4-ct-w8F"/>
+                        <viewControllerLayoutGuide type="bottom" id="BZb-cp-wIt"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="rPD-d9-44l">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ms-a9-AlE">
+                                <rect key="frame" x="272" y="295" width="56" height="30"/>
+                                <state key="normal" title="Perform"/>
+                                <connections>
+                                    <segue destination="iMf-vL-r11" kind="show" id="9FU-bg-rnt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1u-cP-4EL">
+                                <rect key="frame" x="266" y="224" width="68" height="30"/>
+                                <state key="normal" title="Configure"/>
+                                <connections>
+                                    <segue destination="qim-o7-4bH" kind="show" id="P0W-yc-JtE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KleinPad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5k-oq-B5r">
+                                <rect key="frame" x="291" y="126" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IOT-sy-Pmn"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oRT-dH-bF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="3340" y="-2356"/>
+        </scene>
+        <!--Klein Pad Perform View Controller-->
+        <scene sceneID="Nti-WA-g85">
+            <objects>
+                <viewController storyboardIdentifier="PerformViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iMf-vL-r11" customClass="KleinPadPerformViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tzW-De-ZVa"/>
+                        <viewControllerLayoutGuide type="bottom" id="fcr-l9-hB0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YgE-wb-EJI" userLabel="PerformView" customClass="KleinPadPerformView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Z3-vE-oN7" userLabel="SongStructurePartView" customClass="KleinPadSongStructurePartView" customModule="KleinPad" customModuleProvider="target">
+                                <rect key="frame" x="10" y="64" width="509" height="71"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U65-Bl-gC2" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="14" y="28" width="32" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" label="Intro"/>
+                                        <state key="normal" title="Intro"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itG-dt-kHR" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="79" y="27" width="30" height="30"/>
+                                        <state key="normal" title="V1a"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERb-Ms-XE5" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="117" y="27" width="30" height="30"/>
+                                        <state key="normal" title="V1b"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjb-My-PWt" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="155" y="27" width="30" height="30"/>
+                                        <state key="normal" title="PC"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvy-8W-plk" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="193" y="27" width="30" height="30"/>
+                                        <state key="normal" title="Ch"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZS-qo-I83" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="27" width="30" height="30"/>
+                                        <state key="normal" title="V2a"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miR-tZ-viG" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="292" y="27" width="30" height="30"/>
+                                        <state key="normal" title="V2b"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4am-b8-Jog" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="336" y="27" width="30" height="30"/>
+                                        <state key="normal" title="PC"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zup-ju-1jf" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="374" y="27" width="30" height="30"/>
+                                        <state key="normal" title="Ch"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyw-wk-61l" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="412" y="27" width="30" height="30"/>
+                                        <state key="normal" title="Ch2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yR-MO-bwz" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="450" y="27" width="39" height="30"/>
+                                        <state key="normal" title="Outro"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Iw-dh-s0b" userLabel="RecordingToggleView" customClass="KleinPadRecordingToggleView" customModule="KleinPad" customModuleProvider="target">
+                                <rect key="frame" x="537" y="72" width="53" height="63"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xD1-bd-5ly" customClass="KleinPadRecordToggle" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="16" width="51" height="31"/>
+                                        <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yBE-Vl-lBI" userLabel="SongPartsControlView" customClass="KleinPadSongStructurePartView" customModule="KleinPad" customModuleProvider="target">
+                                <rect key="frame" x="20" y="143" width="499" height="143"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAZ-cH-yuG" customClass="KleinPadSongStructurePartsJumpButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="111" y="60" width="31" height="30"/>
+                                        <state key="normal" title="Prev"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2h-VI-Ase" customClass="KleinPadSongStructurePartsJumpButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="51" y="60" width="30" height="30"/>
+                                        <state key="normal" title="First"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efh-V7-qrN" customClass="KleinPadSongStructurePartsJumpButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="212" y="60" width="75" height="30"/>
+                                        <state key="normal" title="Play/Pause"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmz-Ek-Lye" customClass="KleinPadSongStructurePartsJumpButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="359" y="60" width="32" height="30"/>
+                                        <state key="normal" title="Next"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKa-qv-7uB" customClass="KleinPadSongStructurePartsJumpButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="420" y="60" width="30" height="30"/>
+                                        <state key="normal" title="Last"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L3f-SK-4sc" userLabel="LoopsMixerView" customClass="KleinPadLoopsMixerView">
+                                <rect key="frame" x="10" y="294" width="519" height="190"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="89i-0E-Vwn" userLabel="Gain Slider 1" customClass="KleinPadLoopGainSlider">
+                                        <rect key="frame" x="25" y="20" width="92" height="31"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="CjZ-rO-pRj" userLabel="Gain Slider 2" customClass="KleinPadLoopGainSlider">
+                                        <rect key="frame" x="147" y="19" width="92" height="31"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tzy-4t-gn1" userLabel="Gain Slider 4" customClass="KleinPadLoopGainSlider">
+                                        <rect key="frame" x="368" y="20" width="92" height="31"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9A0-BQ-tx6" userLabel="Gain Slider 5" customClass="KleinPadLoopGainSlider">
+                                        <rect key="frame" x="31" y="140" width="92" height="31"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1DQ-yb-8Pl" userLabel="Gain Slider 6" customClass="KleinPadLoopGainSlider">
+                                        <rect key="frame" x="147" y="140" width="92" height="31"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8fp-fH-kSo" userLabel="Gain Slider 7" customClass="KleinPadLoopGainSlider">
+                                        <rect key="frame" x="257" y="140" width="92" height="31"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sNS-X8-GF3" userLabel="Gain Slider 8" customClass="KleinPadLoopGainSlider">
+                                        <rect key="frame" x="368" y="140" width="92" height="31"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wvf-Lc-JlP" userLabel="Gain Slider 3" customClass="KleinPadLoopGainSlider">
+                                        <rect key="frame" x="257" y="20" width="92" height="31"/>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cXA-Gw-Jo2" userLabel="OutputLevelView" customClass="KleinPadInputLevelMeterView" customModule="KleinPad" customModuleProvider="target">
+                                <rect key="frame" x="537" y="143" width="53" height="449"/>
+                                <subviews>
+                                    <glkView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" enableSetNeedsDisplay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13B-BU-9Lz" userLabel="OutputLevelMeter" customClass="KleinPadInputLevelMeter" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="0.0" width="44" height="449"/>
+                                    </glkView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zZw-bv-0ga" userLabel="LoopersView">
+                                <rect key="frame" x="20" y="501" width="509" height="99"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cb-Yp-B0K" userLabel="1">
+                                        <rect key="frame" x="50" y="35" width="30" height="30"/>
+                                        <state key="normal" title="1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s79-pM-pXu" userLabel="2">
+                                        <rect key="frame" x="104" y="35" width="30" height="30"/>
+                                        <state key="normal" title="2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcJ-VS-9iE" userLabel="3">
+                                        <rect key="frame" x="158" y="35" width="30" height="30"/>
+                                        <state key="normal" title="3"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1if-qt-qrO">
+                                        <rect key="frame" x="212" y="35" width="30" height="30"/>
+                                        <state key="normal" title="4"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nt3-h0-mo7">
+                                        <rect key="frame" x="266" y="35" width="30" height="30"/>
+                                        <state key="normal" title="5"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03N-A2-VXg">
+                                        <rect key="frame" x="320" y="35" width="30" height="30"/>
+                                        <state key="normal" title="6"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZb-Li-oaC">
+                                        <rect key="frame" x="374" y="35" width="30" height="30"/>
+                                        <state key="normal" title="7"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY9-ep-Zq2">
+                                        <rect key="frame" x="428" y="35" width="30" height="30"/>
+                                        <state key="normal" title="8"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4YK-gI-pDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4122" y="-2356"/>
+        </scene>
+        <!--Klein Pad Config View Controller-->
+        <scene sceneID="0J6-We-ghY">
+            <objects>
+                <viewController storyboardIdentifier="ConfigViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qim-o7-4bH" customClass="KleinPadConfigViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fgv-PX-Oi7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Iqh-I2-uB8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RhV-sz-N2r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ex1-qQ-L19" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3340" y="-1547"/>
+        </scene>
+        <!--KleinPad-->
+        <scene sceneID="2EP-6q-5K9">
+            <objects>
+                <navigationController storyboardIdentifier="TopNav" title="KleinPad" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I8m-HV-q2q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CeC-di-G5q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tuA-oP-g6n" kind="relationship" relationship="rootViewController" id="LYa-ti-wGl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMy-Xd-lS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2582" y="-2356"/>
         </scene>
     </scenes>
 </document>
