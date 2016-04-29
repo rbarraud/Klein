@@ -227,7 +227,6 @@
                     </view>
                     <connections>
                         <outlet property="loopsmixer" destination="L3f-SK-4sc" id="l01-Os-Xwj"/>
-                        <outletCollection property="sliders" destination="L3f-SK-4sc" collectionClass="NSMutableArray" id="YNs-2b-OLN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4YK-gI-pDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
