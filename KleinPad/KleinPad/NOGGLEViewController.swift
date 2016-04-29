@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NOGGLEViewController.swift
 //  KleinPad
 //
 //  Created by Roger Barraud on 18/04/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NOGGLEViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

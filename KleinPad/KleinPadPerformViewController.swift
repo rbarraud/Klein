@@ -9,6 +9,11 @@
 import UIKit
 
 class KleinPadPerformViewController: UIViewController {
+    
+ //   @IBOutlet var sliders: [KleinPadLoopGainSlider]!
+    
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
