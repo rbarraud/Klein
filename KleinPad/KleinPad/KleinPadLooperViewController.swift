@@ -1,23 +1,23 @@
 //
-//  KleinPadPerformViewController.swift
+//  KleinPadLooperViewController.swift
 //  KleinPad
 //
-//  Created by Roger Barraud on 28/04/16.
+//  Created by Roger Barraud on 29/04/16.
 //  Copyright © 2016 Roger Barraud. All rights reserved.
 //
 
 import UIKit
 
-class KleinPadPerformViewController: UIViewController {
+class KleinPadLooperViewController: UIViewController {
+
+    @IBOutlet weak var slider: UISlider!
     
- //   @IBOutlet weak var loopsmixer: KleinPadLoopsMixerView!
-
-
+    @IBOutlet var progress: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
     }
 
     override func didReceiveMemoryWarning() {

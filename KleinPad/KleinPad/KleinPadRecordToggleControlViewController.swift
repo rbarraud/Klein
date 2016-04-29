@@ -1,23 +1,19 @@
 //
-//  KleinPadPerformViewController.swift
+//  KleinPadRecordToggleControlViewController.swift
 //  KleinPad
 //
-//  Created by Roger Barraud on 28/04/16.
+//  Created by Roger Barraud on 29/04/16.
 //  Copyright © 2016 Roger Barraud. All rights reserved.
 //
 
 import UIKit
 
-class KleinPadPerformViewController: UIViewController {
-    
- //   @IBOutlet weak var loopsmixer: KleinPadLoopsMixerView!
-
+class KleinPadRecordToggleControlViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
     }
 
     override func didReceiveMemoryWarning() {
