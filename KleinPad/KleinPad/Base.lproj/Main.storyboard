@@ -226,6 +226,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="loopsmixer" destination="L3f-SK-4sc" id="l01-Os-Xwj"/>
                         <outletCollection property="sliders" destination="L3f-SK-4sc" collectionClass="NSMutableArray" id="YNs-2b-OLN"/>
                     </connections>
                 </viewController>

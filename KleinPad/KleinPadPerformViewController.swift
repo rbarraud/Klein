@@ -10,15 +10,14 @@ import UIKit
 
 class KleinPadPerformViewController: UIViewController {
     
- //   @IBOutlet var sliders: [KleinPadLoopGainSlider]!
-    
-    
+    @IBOutlet weak var loopsmixer: KleinPadLoopsMixerView!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
