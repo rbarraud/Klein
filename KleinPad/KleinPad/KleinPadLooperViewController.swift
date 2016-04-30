@@ -23,6 +23,8 @@ class KleinPadLooperViewController: UIViewController {
  //       slider.transform = CGAffineTransform(slider.transform, -M_PI_2)
    //     progress.transform = CGAffineTransform(progress.transform, -M_PI_2)
         slider.transform = CGAffineTransformRotate(slider.transform, CGFloat(-1 * M_PI_2));
+        
+        progress.transform = CGAffineTransformRotate(progress.transform, CGFloat(-1 * M_PI_2));
     }
 
     override func didReceiveMemoryWarning() {
