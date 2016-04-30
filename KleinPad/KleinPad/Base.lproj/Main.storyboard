@@ -293,6 +293,10 @@
         <scene sceneID="Tc4-qd-ZQQ">
             <objects>
                 <viewController id="fDC-Ju-67U" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oMJ-l9-tZ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zty-tf-J9x"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="052-Rz-fF7">
                         <rect key="frame" x="0.0" y="0.0" width="79" height="461"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -377,6 +381,10 @@
         <scene sceneID="ve5-C6-Qym">
             <objects>
                 <viewController id="Jfc-W7-r6w" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uVE-L2-u21"/>
+                        <viewControllerLayoutGuide type="bottom" id="nrz-md-Bom"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DdW-Xu-wWQ">
                         <rect key="frame" x="0.0" y="0.0" width="513" height="379"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -441,6 +449,10 @@
         <scene sceneID="D6F-ab-h23">
             <objects>
                 <viewController id="DVa-hc-phr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A2J-yF-y5z"/>
+                        <viewControllerLayoutGuide type="bottom" id="vWB-AE-t6u"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="umo-ch-pjG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -454,6 +466,10 @@
         <scene sceneID="FCE-cz-JpR">
             <objects>
                 <viewController id="UEB-ZD-SMe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b1z-Jz-6ec"/>
+                        <viewControllerLayoutGuide type="bottom" id="Igs-cN-OsN"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HLY-1i-fNt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
