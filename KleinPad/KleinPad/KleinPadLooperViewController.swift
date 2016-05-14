@@ -11,20 +11,15 @@ import UIKit
 class KleinPadLooperViewController: UIViewController {
 
     @IBOutlet weak var slider: UISlider!
-    
     @IBOutlet var progress: UIView!
-    
     @IBOutlet weak var loopernumber: KleinPadLooperButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
- //       slider.transform = CGAffineTransform(slider.transform, -M_PI_2)
-   //     progress.transform = CGAffineTransform(progress.transform, -M_PI_2)
-        slider.transform = CGAffineTransformRotate(slider.transform, CGFloat(-1 * M_PI_2));
-        
-        progress.transform = CGAffineTransformRotate(progress.transform, CGFloat(-1 * M_PI_2));
+        slider.transform = CGAffineTransformRotate(slider.transform, CGFloat(-1 * M_PI_2))
+        progress.transform = CGAffineTransformRotate(progress.transform, CGFloat(-1 * M_PI_2))
     }
 
     override func didReceiveMemoryWarning() {
