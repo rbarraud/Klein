@@ -59,16 +59,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CWE-jl-ube">
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWE-jl-ube">
                                 <rect key="frame" x="20" y="72" width="100" height="536"/>
                                 <subviews>
-                                    <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTz-hg-2Gg" userLabel="Left Side Container View">
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTz-hg-2Gg" userLabel="Left Side Container View">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="536"/>
                                         <connections>
                                             <segue destination="OaF-gd-c8D" kind="embed" id="QiI-ab-4Zn"/>
                                         </connections>
                                     </containerView>
-                                    <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1F-Rl-p8q" userLabel="Right Side Container View">
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1F-Rl-p8q" userLabel="Right Side Container View">
                                         <rect key="frame" x="50" y="0.0" width="50" height="536"/>
                                     </containerView>
                                 </subviews>
@@ -128,7 +128,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0qk-Kr-coZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JvW-he-neb" userLabel="Looper View">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wgm-nm-wjM">
@@ -165,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVq-le-qY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5725" y="-975"/>
+            <point key="canvasLocation" x="4513" y="-654"/>
         </scene>
         <!--Klein Pad Record Toggle Control View Controller-->
         <scene sceneID="lmD-2X-5Ht">
@@ -226,6 +226,9 @@
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ry5-Vv-zUG">
                                         <rect key="frame" x="0.0" y="256" width="240" height="128"/>
+                                        <connections>
+                                            <segue destination="fY2-LX-90r" kind="embed" id="Jvl-AC-PKS"/>
+                                        </connections>
                                     </containerView>
                                 </subviews>
                             </stackView>
@@ -275,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fk-fc-MNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4513" y="-846"/>
+            <point key="canvasLocation" x="4513" y="-864"/>
         </scene>
         <!--Song Structure view Controller-->
         <scene sceneID="hR0-dH-uIm">
@@ -483,10 +486,14 @@
             </objects>
             <point key="canvasLocation" x="5715" y="-2878"/>
         </scene>
-        <!--View Controller-->
+        <!--Looper Track Button View Controller-->
         <scene sceneID="hJo-Ep-LTt">
             <objects>
-                <viewController id="F87-Pi-Fc2" sceneMemberID="viewController">
+                <viewController id="F87-Pi-Fc2" userLabel="Looper Track Button View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vtK-dE-gjH"/>
+                        <viewControllerLayoutGuide type="bottom" id="CVz-5F-qYx"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="D8s-h4-GZ2">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -501,12 +508,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n76-zW-0X2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6223" y="-1141"/>
+            <point key="canvasLocation" x="5744" y="-1015"/>
         </scene>
-        <!--View Controller-->
+        <!--Looper Track Level View Controller-->
         <scene sceneID="YkI-1h-70r">
             <objects>
-                <viewController id="iCi-DE-Wfx" sceneMemberID="viewController">
+                <viewController id="iCi-DE-Wfx" userLabel="Looper Track Level View Controller" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ktY-I0-y4O"/>
                         <viewControllerLayoutGuide type="bottom" id="dlJ-JC-bag"/>
@@ -524,12 +531,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2Y-P6-Wlu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6223" y="-948"/>
+            <point key="canvasLocation" x="5744" y="-812"/>
         </scene>
-        <!--View Controller-->
+        <!--Looper Track Progress Indicator View Controller-->
         <scene sceneID="7gd-1n-eR5">
             <objects>
-                <viewController id="ccf-IQ-lS6" sceneMemberID="viewController">
+                <viewController id="ccf-IQ-lS6" userLabel="Looper Track Progress Indicator View Controller" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iYM-ld-stc"/>
                         <viewControllerLayoutGuide type="bottom" id="YRv-DV-tz1"/>
@@ -547,7 +554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Dk-rv-beN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6223" y="-757"/>
+            <point key="canvasLocation" x="5744" y="-602"/>
         </scene>
     </scenes>
 </document>
