@@ -60,16 +60,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CWE-jl-ube">
-                                <rect key="frame" x="20" y="72" width="100" height="334"/>
+                                <rect key="frame" x="20" y="72" width="100" height="536"/>
                                 <subviews>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTz-hg-2Gg" userLabel="Left Side Container View">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="334"/>
-                                    </containerView>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1F-Rl-p8q" userLabel="Right Side Container View">
-                                        <rect key="frame" x="50" y="0.0" width="50" height="334"/>
+                                    <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTz-hg-2Gg" userLabel="Left Side Container View">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="536"/>
                                         <connections>
-                                            <segue destination="OaF-gd-c8D" kind="embed" id="Fjd-bG-NjL"/>
+                                            <segue destination="OaF-gd-c8D" kind="embed" id="QiI-ab-4Zn"/>
                                         </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1F-Rl-p8q" userLabel="Right Side Container View">
+                                        <rect key="frame" x="50" y="0.0" width="50" height="536"/>
                                     </containerView>
                                 </subviews>
                                 <constraints>
@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4YK-gI-pDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4058" y="-2356"/>
+            <point key="canvasLocation" x="4062" y="-2356"/>
         </scene>
         <!--Klein Pad Config View Controller-->
         <scene sceneID="0J6-We-ghY">
@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ex1-qQ-L19" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3340" y="-1547"/>
+            <point key="canvasLocation" x="2750" y="-3208"/>
         </scene>
         <!--Klein Pad Looper View Controller-->
         <scene sceneID="lYM-1a-oTI">
@@ -127,20 +127,33 @@
                         <viewControllerLayoutGuide type="top" id="kjn-EZ-QKq"/>
                         <viewControllerLayoutGuide type="bottom" id="0qk-Kr-coZ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JvW-he-neb">
+                    <view key="view" contentMode="scaleToFill" id="JvW-he-neb" userLabel="Looper View">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NuI-cO-hRY">
-                                <rect key="frame" x="-44" y="304" width="150" height="2"/>
-                            </progressView>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hyG-bj-PKH">
-                                <rect key="frame" x="-28" y="71" width="118" height="31"/>
-                            </slider>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cb-Yp-B0K" userLabel="1" customClass="KleinPadLooperButton" customModule="KleinPad" customModuleProvider="target">
-                                <rect key="frame" x="16" y="341" width="30" height="30"/>
-                                <state key="normal" title="1"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wgm-nm-wjM">
+                                <rect key="frame" x="20" y="20" width="240" height="384"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONn-O4-Ing">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <connections>
+                                            <segue destination="iCi-DE-Wfx" kind="embed" id="SpC-Mn-Far"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yP6-UY-Dwf" userLabel="Looper Button Container View">
+                                        <rect key="frame" x="0.0" y="128" width="240" height="128"/>
+                                        <connections>
+                                            <segue destination="ccf-IQ-lS6" kind="embed" id="KDi-0H-RvW"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72B-zv-LTr">
+                                        <rect key="frame" x="0.0" y="256" width="240" height="128"/>
+                                        <connections>
+                                            <segue destination="F87-Pi-Fc2" kind="embed" id="CMY-CZ-It3"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -152,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVq-le-qY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4072" y="-1385"/>
+            <point key="canvasLocation" x="5725" y="-975"/>
         </scene>
         <!--Klein Pad Record Toggle Control View Controller-->
         <scene sceneID="lmD-2X-5Ht">
@@ -163,7 +176,7 @@
                         <viewControllerLayoutGuide type="bottom" id="D5H-yy-XaX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="F4i-6J-qUD">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="461"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Iw-dh-s0b" userLabel="RecordingToggleView" customClass="KleinPadRecordingToggleView" customModule="KleinPad" customModuleProvider="target">
@@ -197,18 +210,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gbo-gA-YTA">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="384"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Mc-U5-NaA">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <connections>
+                                            <segue destination="3QJ-Q4-DtH" kind="embed" id="3CP-Xy-kdZ"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfb-Sd-ROK">
+                                        <rect key="frame" x="0.0" y="128" width="240" height="128"/>
+                                        <connections>
+                                            <segue destination="18s-ba-p95" kind="embed" id="nkL-9o-bUa"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ry5-Vv-zUG">
+                                        <rect key="frame" x="0.0" y="256" width="240" height="128"/>
+                                    </containerView>
+                                </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <segue destination="18s-ba-p95" kind="show" id="itI-Qg-ibF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yy3-7J-l4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4774" y="-1676"/>
+            <point key="canvasLocation" x="3953" y="-864"/>
         </scene>
         <!--Klein Pad Song Structure Skip Controls-->
         <scene sceneID="9Em-hj-bv9">
@@ -219,7 +246,7 @@
                         <viewControllerLayoutGuide type="bottom" id="22U-Xx-xEj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eKv-Mi-dS0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAZ-cH-yuG" customClass="KleinPadSongStructurePartsJumpButton" customModule="KleinPad" customModuleProvider="target">
@@ -248,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fk-fc-MNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5465" y="-1530"/>
+            <point key="canvasLocation" x="4513" y="-846"/>
         </scene>
         <!--Song Structure view Controller-->
         <scene sceneID="hR0-dH-uIm">
@@ -259,35 +286,23 @@
                         <viewControllerLayoutGuide type="bottom" id="uHw-Dv-tHJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IY0-B9-LdW" userLabel="Klein Pad Song Structure View" customClass="KleinPadSongStructureViewController">
-                        <rect key="frame" x="0.0" y="0.0" width="50" height="334"/>
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UaX-ez-011">
-                                <rect key="frame" x="-60" y="126" width="240" height="1178"/>
+                                <rect key="frame" x="-60" y="126" width="483" height="1176"/>
                                 <subviews>
-                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mBz-Z2-5M7">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <connections>
-                                            <segue destination="bvP-O9-clf" kind="embed" id="dWP-pP-VuA"/>
-                                        </connections>
+                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SjN-Gu-Pmm" userLabel="Song Structure Sequence Display Container View" customClass="UIContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="483" height="128"/>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mBz-Z2-5M7" userLabel="Song Structure Control Container View" customClass="UIContainerView">
+                                        <rect key="frame" x="0.0" y="128" width="483" height="128"/>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SAY-r0-B4u" userLabel="Record Toggle">
-                                        <rect key="frame" x="0.0" y="128" width="240" height="461"/>
-                                        <connections>
-                                            <segue destination="EeN-n8-45o" kind="embed" id="qDC-gG-V3c"/>
-                                        </connections>
-                                    </containerView>
-                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SjN-Gu-Pmm">
-                                        <rect key="frame" x="0.0" y="589" width="240" height="128"/>
-                                        <connections>
-                                            <segue destination="R7e-Ye-8nw" kind="embed" id="bVh-p3-JTu"/>
-                                        </connections>
+                                        <rect key="frame" x="0.0" y="256" width="483" height="459"/>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CqE-eN-Nc5" userLabel="Input Level Container View">
-                                        <rect key="frame" x="0.0" y="717" width="240" height="461"/>
-                                        <connections>
-                                            <segue destination="fDC-Ju-67U" kind="embed" id="db3-PK-xsx"/>
-                                        </connections>
+                                        <rect key="frame" x="0.0" y="715" width="483" height="461"/>
                                     </containerView>
                                 </subviews>
                             </stackView>
@@ -297,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldu-jO-KtZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4038" y="-3128"/>
+            <point key="canvasLocation" x="3409" y="-1438"/>
         </scene>
         <!--KleinPad Top Level Navigation Controller-->
         <scene sceneID="2EP-6q-5K9">
@@ -317,16 +332,16 @@
             </objects>
             <point key="canvasLocation" x="2582" y="-2356"/>
         </scene>
-        <!--View Controller-->
+        <!--Level Meter View Controller-->
         <scene sceneID="Tc4-qd-ZQQ">
             <objects>
-                <viewController id="fDC-Ju-67U" sceneMemberID="viewController">
+                <viewController id="fDC-Ju-67U" userLabel="Level Meter View Controller" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oMJ-l9-tZ1"/>
                         <viewControllerLayoutGuide type="bottom" id="Zty-tf-J9x"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="052-Rz-fF7">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="461"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <glkView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" enableSetNeedsDisplay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13B-BU-9Lz" userLabel="OutputLevelMeter" customClass="KleinPadInputLevelMeter" customModule="KleinPad" customModuleProvider="target">
@@ -338,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDJ-Cl-6oN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4527.5" y="-2747.5"/>
+            <point key="canvasLocation" x="4195" y="-3084"/>
         </scene>
         <!--Klein Pad Perform Song Strucure View Controller-->
         <scene sceneID="ikJ-k3-znF">
@@ -349,11 +364,11 @@
                         <viewControllerLayoutGuide type="bottom" id="3pn-jI-saB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iR2-AB-9v7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Vg-yj-wTI">
-                                <rect key="frame" x="20" y="28" width="341" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Vg-yj-wTI">
+                                <rect key="frame" x="16" y="28" width="341" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIo-8W-Fey" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
@@ -414,12 +429,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDt-kF-bLw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5291" y="-1857"/>
+            <point key="canvasLocation" x="4513" y="-1088"/>
         </scene>
         <!--Level View Controller-->
         <scene sceneID="EY7-Uy-tpF">
             <objects>
                 <viewController id="Y7w-2g-QzA" userLabel="Level View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BjY-dA-JCA"/>
+                        <viewControllerLayoutGuide type="bottom" id="hOC-Lm-Wkq"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="X1I-fP-oq3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -447,9 +466,6 @@
                                                         <subviews>
                                                             <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l7Z-Yu-hcY">
                                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                                <connections>
-                                                                    <segue destination="lFy-Fy-0GE" kind="embed" id="LRd-L9-0nj"/>
-                                                                </connections>
                                                             </containerView>
                                                         </subviews>
                                                     </stackView>
@@ -465,47 +481,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQZ-6c-ysd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4614" y="-2213"/>
+            <point key="canvasLocation" x="5715" y="-2878"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="mz8-kt-kN6">
+        <scene sceneID="hJo-Ep-LTt">
             <objects>
-                <viewController id="lFy-Fy-0GE" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="83s-Kc-ANl">
+                <viewController id="F87-Pi-Fc2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D8s-h4-GZ2">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cb-Yp-B0K" userLabel="1" customClass="KleinPadLooperButton" customModule="KleinPad" customModuleProvider="target">
+                                <rect key="frame" x="33" y="49" width="174" height="30"/>
+                                <state key="normal" title="1"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6ne-Yp-yK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n76-zW-0X2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4838" y="-2547"/>
+            <point key="canvasLocation" x="6223" y="-1141"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="PaT-GN-Ytx">
+        <scene sceneID="YkI-1h-70r">
             <objects>
-                <viewController id="bvP-O9-clf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SjC-Ra-eTX">
+                <viewController id="iCi-DE-Wfx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ktY-I0-y4O"/>
+                        <viewControllerLayoutGuide type="bottom" id="dlJ-JC-bag"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SPk-rV-Me0">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hyG-bj-PKH">
+                                <rect key="frame" x="23" y="49" width="194" height="31"/>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e9p-2F-SGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2Y-P6-Wlu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="6223" y="-948"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="icq-om-blI">
+        <scene sceneID="7gd-1n-eR5">
             <objects>
-                <viewController id="R7e-Ye-8nw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zKB-oE-h4h">
+                <viewController id="ccf-IQ-lS6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iYM-ld-stc"/>
+                        <viewControllerLayoutGuide type="bottom" id="YRv-DV-tz1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GWG-Kn-wqV">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NuI-cO-hRY">
+                                <rect key="frame" x="25" y="63" width="191" height="2"/>
+                            </progressView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VMw-SQ-MAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Dk-rv-beN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="6223" y="-757"/>
         </scene>
     </scenes>
 </document>
