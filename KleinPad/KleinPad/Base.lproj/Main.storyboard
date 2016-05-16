@@ -55,42 +55,37 @@
                         <viewControllerLayoutGuide type="top" id="tzW-De-ZVa"/>
                         <viewControllerLayoutGuide type="bottom" id="fcr-l9-hB0"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="YgE-wb-EJI" userLabel="PerformView" customClass="KleinPadPerformView">
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="YgE-wb-EJI" userLabel="PerformView" customClass="KleinPadPerformView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Isp-z9-KEO" userLabel="Perform Stack View">
-                                <rect key="frame" x="20" y="64" width="3102" height="744"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CWE-jl-ube">
+                                <rect key="frame" x="20" y="72" width="100" height="334"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ebl-VA-bJU" userLabel="Left Side Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="3102" height="372"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UfM-HT-hoZ" userLabel="Song Stack View">
-                                                <rect key="frame" x="0.0" y="0.0" width="3102" height="372"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YW9-Rk-ndG" userLabel="Loopers Stack View">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1034" height="372"/>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dFQ-ce-AcP" userLabel="Loopers Stack View">
-                                                        <rect key="frame" x="1034" y="0.0" width="2068" height="372"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7i-xh-M1z" userLabel="Looper Stack View">
-                                                                <rect key="frame" x="0.0" y="0.0" width="2068" height="372"/>
-                                                            </stackView>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iAa-HL-g4q" userLabel="Right Side Stack View">
-                                        <rect key="frame" x="0.0" y="372" width="3102" height="372"/>
-                                    </stackView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTz-hg-2Gg" userLabel="Left Side Container View">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="334"/>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1F-Rl-p8q" userLabel="Right Side Container View">
+                                        <rect key="frame" x="50" y="0.0" width="50" height="334"/>
+                                        <connections>
+                                            <segue destination="OaF-gd-c8D" kind="embed" id="Fjd-bG-NjL"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="g1F-Rl-p8q" firstAttribute="leading" secondItem="CWE-jl-ube" secondAttribute="leading" constant="50" id="T92-eO-20b"/>
+                                    <constraint firstItem="g1F-Rl-p8q" firstAttribute="leading" secondItem="HTz-hg-2Gg" secondAttribute="trailing" constant="8" symbolic="YES" id="fLa-e4-fkr"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="Isp-z9-KEO" secondAttribute="leading" id="Uca-Cb-AhC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g1F-Rl-p8q" secondAttribute="trailing" constant="460" id="D7A-ok-euq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="HTz-hg-2Gg" secondAttribute="leading" id="YxQ-CN-Mii"/>
+                            <constraint firstItem="CWE-jl-ube" firstAttribute="top" secondItem="tzW-De-ZVa" secondAttribute="bottom" constant="210" id="c9W-th-aCX"/>
+                            <constraint firstItem="CWE-jl-ube" firstAttribute="bottom" secondItem="fcr-l9-hB0" secondAttribute="top" constant="8" symbolic="YES" id="elt-NP-eXp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CWE-jl-ube" secondAttribute="trailing" constant="460" id="pgJ-KS-2Zz"/>
+                            <constraint firstItem="CWE-jl-ube" firstAttribute="top" secondItem="tzW-De-ZVa" secondAttribute="bottom" constant="8" id="u3i-cD-fYC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="CWE-jl-ube" secondAttribute="leading" id="zxN-nd-X2f"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -157,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVq-le-qY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3860.5" y="-1128.5"/>
+            <point key="canvasLocation" x="4072" y="-1385"/>
         </scene>
         <!--Klein Pad Record Toggle Control View Controller-->
         <scene sceneID="lmD-2X-5Ht">
@@ -168,7 +163,7 @@
                         <viewControllerLayoutGuide type="bottom" id="D5H-yy-XaX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="F4i-6J-qUD">
-                        <rect key="frame" x="0.0" y="0.0" width="79" height="461"/>
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="461"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Iw-dh-s0b" userLabel="RecordingToggleView" customClass="KleinPadRecordingToggleView" customModule="KleinPad" customModuleProvider="target">
@@ -187,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lB2-CU-GsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4744.5" y="-2552"/>
+            <point key="canvasLocation" x="4888.5" y="-3112.5"/>
         </scene>
         <!--Klein Pad Song View Controller-->
         <scene sceneID="OYJ-21-cUM">
@@ -200,12 +195,20 @@
                     <view key="view" contentMode="scaleToFill" id="5Xs-5k-9Aa">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gbo-gA-YTA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="18s-ba-p95" kind="show" id="itI-Qg-ibF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yy3-7J-l4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4744.5" y="-1786.5"/>
+            <point key="canvasLocation" x="4774" y="-1676"/>
         </scene>
         <!--Klein Pad Song Structure Skip Controls-->
         <scene sceneID="9Em-hj-bv9">
@@ -245,7 +248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fk-fc-MNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5358" y="-1378"/>
+            <point key="canvasLocation" x="5465" y="-1530"/>
         </scene>
         <!--Song Structure view Controller-->
         <scene sceneID="hR0-dH-uIm">
@@ -256,20 +259,32 @@
                         <viewControllerLayoutGuide type="bottom" id="uHw-Dv-tHJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IY0-B9-LdW" userLabel="Klein Pad Song Structure View" customClass="KleinPadSongStructureViewController">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="334"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qXa-2p-2mX" userLabel="Level Stack View">
-                                <rect key="frame" x="-1236" y="281" width="158" height="461"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UaX-ez-011">
+                                <rect key="frame" x="-60" y="126" width="240" height="1178"/>
                                 <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mBz-Z2-5M7">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <connections>
+                                            <segue destination="bvP-O9-clf" kind="embed" id="dWP-pP-VuA"/>
+                                        </connections>
+                                    </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SAY-r0-B4u" userLabel="Record Toggle">
-                                        <rect key="frame" x="0.0" y="0.0" width="79" height="461"/>
+                                        <rect key="frame" x="0.0" y="128" width="240" height="461"/>
                                         <connections>
                                             <segue destination="EeN-n8-45o" kind="embed" id="qDC-gG-V3c"/>
                                         </connections>
                                     </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SjN-Gu-Pmm">
+                                        <rect key="frame" x="0.0" y="589" width="240" height="128"/>
+                                        <connections>
+                                            <segue destination="R7e-Ye-8nw" kind="embed" id="bVh-p3-JTu"/>
+                                        </connections>
+                                    </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CqE-eN-Nc5" userLabel="Input Level Container View">
-                                        <rect key="frame" x="79" y="0.0" width="79" height="461"/>
+                                        <rect key="frame" x="0.0" y="717" width="240" height="461"/>
                                         <connections>
                                             <segue destination="fDC-Ju-67U" kind="embed" id="db3-PK-xsx"/>
                                         </connections>
@@ -282,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldu-jO-KtZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4534" y="-2334"/>
+            <point key="canvasLocation" x="4038" y="-3128"/>
         </scene>
         <!--KleinPad Top Level Navigation Controller-->
         <scene sceneID="2EP-6q-5K9">
@@ -311,7 +326,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Zty-tf-J9x"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="052-Rz-fF7">
-                        <rect key="frame" x="0.0" y="0.0" width="79" height="461"/>
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="461"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <glkView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" enableSetNeedsDisplay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13B-BU-9Lz" userLabel="OutputLevelMeter" customClass="KleinPadInputLevelMeter" customModule="KleinPad" customModuleProvider="target">
@@ -323,7 +338,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDJ-Cl-6oN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4744.5" y="-2241.5"/>
+            <point key="canvasLocation" x="4527.5" y="-2747.5"/>
         </scene>
         <!--Klein Pad Perform Song Strucure View Controller-->
         <scene sceneID="ikJ-k3-znF">
@@ -337,58 +352,160 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JW-ro-aid" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
-                                <rect key="frame" x="20" y="20" width="32" height="30"/>
-                                <accessibility key="accessibilityConfiguration" label="Intro"/>
-                                <state key="normal" title="Intro"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4R-Bh-PKq" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
-                                <rect key="frame" x="75" y="20" width="30" height="30"/>
-                                <state key="normal" title="V1a"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67T-aJ-iNO" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
-                                <rect key="frame" x="129" y="20" width="30" height="30"/>
-                                <state key="normal" title="V1b"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQo-L9-Ltl" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
-                                <rect key="frame" x="344" y="20" width="30" height="30"/>
-                                <state key="normal" title="PC"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSD-bD-nN6" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
-                                <rect key="frame" x="218" y="20" width="30" height="30"/>
-                                <state key="normal" title="Ch"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp1-RA-XI2" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
-                                <rect key="frame" x="256" y="20" width="30" height="30"/>
-                                <state key="normal" title="V2a"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iq1-tF-Qo0" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
-                                <rect key="frame" x="300" y="20" width="30" height="30"/>
-                                <state key="normal" title="V2b"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cje-ya-H7d" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
-                                <rect key="frame" x="178" y="20" width="30" height="30"/>
-                                <state key="normal" title="PC"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLc-mr-0Br" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
-                                <rect key="frame" x="389" y="20" width="30" height="30"/>
-                                <state key="normal" title="Ch"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bc-0g-TB3" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
-                                <rect key="frame" x="434" y="20" width="30" height="30"/>
-                                <state key="normal" title="Ch2"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIo-8W-Fey" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
-                                <rect key="frame" x="477" y="20" width="39" height="30"/>
-                                <state key="normal" title="Outro"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Vg-yj-wTI">
+                                <rect key="frame" x="20" y="28" width="341" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIo-8W-Fey" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
+                                        <state key="normal" title="Outro"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bc-0g-TB3" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="39" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Ch2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLc-mr-0Br" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="69" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Ch"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cje-ya-H7d" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="PC"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iq1-tF-Qo0" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="129" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="V2b"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp1-RA-XI2" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="159" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="V2a"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSD-bD-nN6" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="189" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Ch"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQo-L9-Ltl" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="219" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="PC"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67T-aJ-iNO" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="249" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="V1b"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4R-Bh-PKq" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="279" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="V1a"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JW-ro-aid" customClass="KleinPadSongStructurePartButton" customModule="KleinPad" customModuleProvider="target">
+                                        <rect key="frame" x="309" y="0.0" width="32" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" label="Intro"/>
+                                        <state key="normal" title="Intro"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Vg-yj-wTI" secondAttribute="trailing" constant="219" id="OgT-Qa-B0r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Vg-yj-wTI" secondAttribute="trailing" constant="219" id="R9Q-Yo-d73"/>
+                            <constraint firstItem="4Vg-yj-wTI" firstAttribute="top" secondItem="A63-nk-BiB" secondAttribute="bottom" constant="8" id="nXv-k8-Yeh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4Vg-yj-wTI" secondAttribute="leading" id="uBp-3J-afG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDt-kF-bLw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5269" y="-1879"/>
+            <point key="canvasLocation" x="5291" y="-1857"/>
+        </scene>
+        <!--Level View Controller-->
+        <scene sceneID="EY7-Uy-tpF">
+            <objects>
+                <viewController id="Y7w-2g-QzA" userLabel="Level View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X1I-fP-oq3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YLk-od-NrO" userLabel="Perform Horizontal Stack View">
+                                <rect key="frame" x="-2465" y="-122" width="5170" height="372"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ebl-VA-bJU" userLabel="Left Side Stack View">
+                                <rect key="frame" x="-2465" y="-122" width="5170" height="372"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iAa-HL-g4q" userLabel="Right Side Stack View">
+                                <rect key="frame" x="-2465" y="-122" width="5170" height="372"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YW9-Rk-ndG" userLabel="Loopers Stack View">
+                                <rect key="frame" x="-424" y="20" width="240" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7i-xh-M1z" userLabel="Looper Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dFQ-ce-AcP" userLabel="Loopers Stack View">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UfM-HT-hoZ" userLabel="Song Stack View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                        <subviews>
+                                                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l7Z-Yu-hcY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                                <connections>
+                                                                    <segue destination="lFy-Fy-0GE" kind="embed" id="LRd-L9-0nj"/>
+                                                                </connections>
+                                                            </containerView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQZ-6c-ysd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4614" y="-2213"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mz8-kt-kN6">
+            <objects>
+                <viewController id="lFy-Fy-0GE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="83s-Kc-ANl">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ne-Yp-yK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4838" y="-2547"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PaT-GN-Ytx">
+            <objects>
+                <viewController id="bvP-O9-clf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SjC-Ra-eTX">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9p-2F-SGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="icq-om-blI">
+            <objects>
+                <viewController id="R7e-Ye-8nw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zKB-oE-h4h">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMw-SQ-MAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>
